@@ -10,6 +10,13 @@ Feature: Pricing
     And I press pricing
     Then I am on "/pricing"
 
+  Scenario: Validating the individual price
+    Given I am on "/pricing"
+    And I press Annual Pricing
+    Then I should see "$49/month"
+    And I press the text
+    Then I should see "Individual?"
+
   @mink:selenium2
   Scenario: Testing the Sandbox
     Given I am on "/test/guinea-pig"

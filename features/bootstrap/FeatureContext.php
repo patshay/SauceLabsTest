@@ -63,10 +63,11 @@ class FeatureContext extends MinkContext
     {
         /**
          *This function exists to find the Annual Pricing button.  
-         *I was going to find/click this button to ensure I'm on the right page
+         *I was going to find/click this button to ensure I'm on the right page 
+         *(pricing, with $49 for the individual acount)
          */
-        
-        $element = $this->getSession()->findElement(WebDriverBy::linkText("ANNUAL PRICING"))->click();
+        throw new PendingException();
+        //$element = $this->getSession()->findElement(WebDriverBy::linkText("ANNUAL PRICING"))->click();
     }
 
     /**
