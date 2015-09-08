@@ -43,7 +43,8 @@ class FeatureContext extends MinkContext
      */
     public function iPressTheHamburgerMenu()
     {
-        $select = $this->getSession()->getPage()->find('css', 'hamburger')->click();
+        throw new PendingException();
+        //$select = $this->getSession()->getPage()->find('css', 'hamburger')->click();
         //$element = $this->getSession()->getPage()->findElement(WebDriverBy::cssSelector("span.ir"))->click();
     }
 
